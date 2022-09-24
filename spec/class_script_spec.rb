@@ -21,25 +21,4 @@ require 'class_script'
    it 'should raise error NoMethodError' do
      expect{ :x.count }.to raise_error(NoMethodError)
    end
-
-   it 'should return true if input can be found in dictionary' do
-     options = OpenStruct.new
-     options.number = 2
-     cs = ClassScript.new(options)
-     expect(cs.segment('MyCode', ['My', 'Code'])).to eq(true)
-   end
-
-   it 'should return true if input can be found in dictionary' do
-     options = OpenStruct.new
-     options.number = 2
-     cs = ClassScript.new(options)
-     expect(cs.segment('ApplePenApple', ['Apple', 'Pen'])).to eq(true)
-   end
-
-   it 'should return true if input can be found in dictionary' do
-     options = OpenStruct.new
-     options.number = 2
-     cs = ClassScript.new(options)
-     expect(cs.segment('canonical', ['can', 'canonical'])).to eq(true)
-   end
  end
