@@ -25,9 +25,13 @@ class ClassScript
   end
 end
 
+def check_string(string) # check that string contains only digits and is not ''
+  string.scan(/\D/).empty? && string.length > 0
+end
+
 def validate_options(options)
   errors = Array.new
-  unless (options.number || (options.number.is_a? Integer))
+  unless check_string(options.number)
     errors << 'You must specify an integer: -n INT'
   end
 
