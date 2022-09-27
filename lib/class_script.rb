@@ -26,7 +26,8 @@ class ClassScript
 end
 
 def check_string(string) # check that string contains only digits and is not ''
-  string.scan(/\D/).empty? && string.length > 0
+  return false if string.nil?
+  string.scan(/\D/).empty?
 end
 
 def validate_options(options)
