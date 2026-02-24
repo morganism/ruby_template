@@ -1,4 +1,9 @@
+[![CodeQL](https://github.com/morganism/ruby_template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/morganism/ruby_template/actions/workflows/codeql-analysis.yml)
+[![ruby_template](https://github.com/morganism/ruby_template/actions/workflows/default.yml/badge.svg)](https://github.com/morganism/ruby_template/actions/workflows/default.yml)
+[![Ruby](https://github.com/morganism/ruby_template/actions/workflows/ruby.yml/badge.svg)](https://github.com/morganism/ruby_template/actions/workflows/ruby.yml)
+
 # ruby_template
+
 A ruby repository template 
 
 Use this to create any new ruby repo
